@@ -1,29 +1,18 @@
-import type { Metadata } from 'next'
-import { Space_Grotesk } from 'next/font/google'
-import './globals.css'
+import type { Metadata } from "next";
+import { Space_Grotesk } from "next/font/google";
+import "./globals.css";
 
-const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
-  variable: '--font-sans',
-})
+const font = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Reddit Verification System',
-  description: 'Advanced human verification for Reddit communities',
-}
+  title: "Devvit - Human Verification System",
+  description: "Advanced human verification for Reddit communities. Protect subreddits from bots and spam.",
+};
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={spaceGrotesk.variable}>
-        <div className="min-h-[100dvh] bg-neutral-50">
-          {children}
-        </div>
-      </body>
+      <body className={font.className}>{children}</body>
     </html>
-  )
+  );
 }
