@@ -1,4 +1,4 @@
-import { Check, Shield } from '@phosphor-icons/react'
+import { Check, Shield } from 'lucide-react'
 
 interface VerificationBadgeProps {
   size?: 'sm' | 'md'

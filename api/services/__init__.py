@@ -1,1 +1,0 @@
-# Service layer for webhook notifications

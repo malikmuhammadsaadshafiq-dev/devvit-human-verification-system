@@ -1,6 +1,6 @@
 'use client'
 
-import { ShieldStar, User } from '@phosphor-icons/react'
+import { ShieldCheck, User } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 interface VerificationTriggerProps {
@@ -28,7 +28,7 @@ export function VerificationTrigger({
       } ${className}`}
     >
       {verified ? (
-        <ShieldStar size={16} weight="fill" />
+        <ShieldCheck size={16} weight="fill" />
       ) : (
         <User size={16} />
       )}

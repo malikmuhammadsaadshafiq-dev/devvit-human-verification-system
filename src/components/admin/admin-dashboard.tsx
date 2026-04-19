@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Shield, ShieldCheck, ShieldX, User, Clock, Check, X, AlertCircle } from '@phosphor-icons/react'
+import { Shield, ShieldCheck, ShieldX, User, Clock, Check, X, AlertCircle } from 'lucide-react'
 import type { UserVerification } from '@/lib/types'
 
 interface AdminDashboardProps {

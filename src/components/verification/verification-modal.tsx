@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { X, Check, ArrowRight, BookOpen, Chat, Scroll } from '@phosphor-icons/react'
+import { X, Check, ArrowRight, BookOpen, MessageCircle, ScrollText } from 'lucide-react'
 
 interface VerificationModalProps {
   isOpen: boolean
@@ -26,13 +26,13 @@ export function VerificationModal({ isOpen, onClose, onComplete }: VerificationM
       id: 2, 
       title: 'Interaction Required',
       description: 'Reply to the automated verification DM.',
-      icon: Chat
+      icon: MessageCircle
     },
     {
       id: 3,
       title: 'Community Rules',
       description: 'Agree to follow the subreddit guidelines.',
-      icon: Scroll
+      icon: ScrollText
     }
   ]
 
@@ -73,7 +73,7 @@ export function VerificationModal({ isOpen, onClose, onComplete }: VerificationM
             <div className="flex items-center justify-between p-6 border-b border-neutral-200">
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center">
-                  <ShieldStar size={20} className="text-primary-600" />
+                  <ShieldCheck size={20} className="text-primary-600" />
                 </div>
                 <div>
                   <h2 className="text-lg font-semibold text-neutral-900">Get Verified</h2>

@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
-import { Shield, Users, BarChart3, Settings } from '@phosphor-icons/react'
+import { Shield, Users, BarChart3, Settings } from 'lucide-react'
 import { AdminDashboard } from '@/components/admin/admin-dashboard'
 import { getUsers, updateUserStatus } from '@/lib/api'
 import type { UserVerification } from '@/lib/types'

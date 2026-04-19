@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Shield, Users, BarChart3, Check } from '@phosphor-icons/react'
+import { Shield, Users, BarChart3, Check } from 'lucide-react'
 import { VerificationTrigger } from '@/components/verification/verification-trigger'
 import { VerificationModal } from '@/components/verification/verification-modal'
 import { VerificationBadge } from '@/components/ui/badge'
