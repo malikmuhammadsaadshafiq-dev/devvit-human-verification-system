@@ -15,7 +15,7 @@ export function VerificationBadge({
 
   return (
     <div className={`verified-badge ${size === 'md' ? 'px-3 py-1.5 text-sm' : ''} ${className}`}>
-      <Shield size={size === 'sm' ? 14 : 16} weight="fill" />
+      <Shield size={size === 'sm' ? 14 : 16} />
       <span>Verified</span>
     </div>
   )

@@ -28,7 +28,7 @@ export function VerificationTrigger({
       } ${className}`}
     >
       {verified ? (
-        <ShieldCheck size={16} weight="fill" />
+        <ShieldCheck size={16} />
       ) : (
         <User size={16} />
       )}
